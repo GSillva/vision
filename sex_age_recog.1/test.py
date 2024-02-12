@@ -1,4 +1,3 @@
-
 import cv2
 import math
 import time
@@ -85,3 +84,7 @@ while cv2.waitKey(1) < 0:
         cv2.imshow("Age Gender Demo", frameFace)
        
     print("time : {:.3f}".format(time.time() - t))
+
+
+
+#fonte:https://medium.com/analytics-vidhya/real-time-age-gender-detection-using-opencv-fa705fe0e1fa
