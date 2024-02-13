@@ -27,14 +27,14 @@ def detecFace(net, frame,conf_threshold = 0.75):
 
     return frameOpencvDnn , bboxes
 
-faceProto = "opencv_face_detector.pbtxt"
-faceModel = "opencv_face_detector_uint8.pb"
+faceProto = "./sex_age_recog.1/opencv_face_detector.pbtxt"
+faceModel = "./sex_age_recog.1/oopencv_face_detector_uint8.pb"
 
-ageProto = "age_deploy.prototxt"
-ageModel = "age_net.caffemodel"
+ageProto = "./sex_age_recog.1/oage_deploy.prototxt"
+ageModel = "./sex_age_recog.1/oage_net.caffemodel"
 
-genderProto = "gender_deploy.prototxt"
-genderModel = "gender_net.caffemodel"
+genderProto = "./sex_age_recog.1/ogender_deploy.prototxt"
+genderModel = "./sex_age_recog.1/ogender_net.caffemodel"
 
 MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
 ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
