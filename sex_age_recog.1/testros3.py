@@ -2,6 +2,11 @@ import cv2
 import numpy as np
 import time
 import pyrealsense2 as rs
+import argparse
+import rclpy
+from cv_bridge import CvBridge
+from sensor_msgs.msg import Image
+
 
 def detectarRosto(net, frame, conf_threshold=0.75):
     frameOpencvDnn = frame.copy()
